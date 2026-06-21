@@ -1,0 +1,10 @@
+{
+  "name": "att-ui",
+  "version": "0.1.0",
+  "description": "Workspace UI for AI-Team-Team",
+  "license": "Apache-2.0",
+  "scripts": {
+    "backend": "cd backend && ./venv/bin/python app.py",
+    "frontend": "cd frontend && npm run dev"
+  }
+}

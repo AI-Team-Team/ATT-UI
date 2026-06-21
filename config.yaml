@@ -1,0 +1,17 @@
+# config.yaml
+
+# ==========================================
+# Experimental AI Autonomy & Delegation
+# ==========================================
+autonomy:
+  enable_autonomy_suite: true           # Master toggle to enable/disable entire autonomy suite
+  enable_autonomous_queries: true       # Global toggle for tool use loops
+  enable_dynamic_delegation: true       # Global toggle for spawning subagents
+  max_delegation_depth: 2               # Depth 0 (root) -> Depth 1 (child) -> Depth 2 (grandchild)
+  min_subagent_team_size: 3             # Minimum sibling team size required to spawn
+  max_subagent_team_size: 5             # Max sibling team size
+  subagent_discussion_rounds: 2         # Discussion rounds inside subagent panels
+  react_max_steps: 5                    # Max reasoning loop steps for an agent turn
+  inbox_summarize_threshold_chars: 1500 # Threshold to compress cascading inbox alerts
+  large_file_threshold_kb: 50           # Files larger than this return outline warning
+  max_chunk_lines: 200                  # Paginated lines per read request
